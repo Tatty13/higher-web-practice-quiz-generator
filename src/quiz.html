@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Прохождение теста</title>
+  <link rel="stylesheet" href="./css/pages/quiz.css" />
+</head>
+
+<body>
+
+  <!-- В quiz.html -->
+  <template id="single-question-template">
+    <div class="question" data-type="single">
+      <h3 class="question__text"></h3>
+      <p class="question__hint">Выберите один вариант ответа</p>
+      <div class="question__options"></div>
+    </div>
+  </template>
+
+  <template id="multiple-question-template">
+    <div class="question" data-type="multiple">
+      <h3 class="question__text"></h3>
+      <p class="question__hint">Выберите один или несколько вариантов ответа</p>
+      <div class="question__options"></div>
+    </div>
+  </template>
+
+  <template id="option-template">
+    <label class="option">
+      <input type="radio" name="question" value="" />
+      <span class="option__text"></span>
+    </label>
+  </template>
+
+  <template id="checkbox-option-template">
+    <label class="option">
+      <input type="checkbox" name="question" value="" />
+      <span class="option__text"></span>
+    </label>
+  </template>
+
+  <script type="module" src="./js/pages/quiz.js"></script>
+</body>
+
+</html>
