@@ -1,0 +1,22 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: var(--spacing-64);
+}
+
+.footer__copyright {
+  color: var(--color-text-secondary);
+}
+
+@media (max-width: 798px) {
+  .footer {
+    padding-bottom: var(--spacing-32);
+  }
+}
+
+@media (max-width: 390px) {
+  .footer {
+    padding-bottom: var(--spacing-20);
+  }
+}

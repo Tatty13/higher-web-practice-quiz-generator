@@ -1,0 +1,45 @@
+@import '../vendor/normalize.css';
+@import '../vendor/fonts/inter/fonts.css';
+
+body {
+  font-family: var(--font-family-main);
+  font-style: normal;
+  font-size: var(--font-size-body);
+  color: var(--color-text-primary);
+  line-height: var(--font-line-height-lg);
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  background: var(--color-surface);
+}
+
+h1 {
+  margin: 0;
+  font-size: var(--font-size-h1);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--font-line-height-xs);
+}
+
+h2 {
+  margin: 0;
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--font-line-height-xs);
+}
+
+h3 {
+  margin: 0;
+  font-size: var(--font-size-h3);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--font-line-height-sm);
+}
+
+p {
+  margin: 0;
+}
+
+[hidden] {
+  display: none !important;
+}

@@ -1,0 +1,9 @@
+.page {
+  margin: 0 auto;
+  padding: var(--padding-page);
+  max-width: var(--page-width-max);
+  min-width: var(--page-width-min);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,14 @@
+@import '../base/base.css';
+@import '../base/variables.css';
+
+@import '../components/page.css';
+@import '../components/header.css';
+@import '../components/logo.css';
+@import '../components/burger-btn.css';
+@import '../components/content.css';
+@import '../components/footer.css';
+
+@import '../components/form.css';
+@import '../components/quiz-generator.css';
+@import '../components/button.css';
+@import '../components/toast.css';

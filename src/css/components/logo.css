@@ -1,0 +1,10 @@
+.logo {
+  display: block;
+  width: 25px;
+  height: 40px;
+  background: url(../../assets/logo.svg) no-repeat center / contain;
+}
+
+.logo:hover {
+  opacity: var(--opacity-80);
+}

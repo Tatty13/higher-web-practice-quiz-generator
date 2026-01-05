@@ -1,0 +1,38 @@
+.quiz-generator {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-32);
+}
+
+.quiz-generator__textarea {
+  height: 240px;
+  padding: var(--spacing-12);
+  margin-bottom: var(--spacing-20);
+  font-family: var(--font-family-secondary);
+  font-size: var(--font-size-mono);
+  color: var(--color-text-primary);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--box-shadow-s);
+  resize: none;
+}
+
+.quiz-generator__textarea::placeholder {
+  color: var(--color-text-secondary);
+}
+
+.quiz-generator__textarea:focus {
+  outline: 2px solid var(--color-primary);
+  box-shadow: var(--box-shadow-m);
+}
+
+.quiz-generator__textarea_invalid {
+  outline: 2px solid var(--color-error);
+  box-shadow: var(--box-shadow-m);
+}
+
+.quiz-generator__label {
+  margin-bottom: var(--spacing-4);
+  color: var(--color-text-secondary);
+}

@@ -5,10 +5,58 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Генератор квизов</title>
+  <link rel="shortcut icon" href="./assets/logo.svg" type="image/x-icon">
   <link rel="stylesheet" href="./css/pages/index.css" />
 </head>
 
 <body>
+  <div class="page">
+    <header class="header">
+      <a class="logo" href="#"></a>
+      <nav class="header__nav">
+        <a class="button button__type_default" href="./quizzes.html">Посмотреть сохранённые квизы</a>
+      </nav>
+      <button class="burger-btn">
+        <span class="burger-btn__line"></span>
+      </button>
+      <nav class="header__menu">
+        <ul class="header__menu-list">
+          <li class="header__menu-item">
+            <a class="header__menu-link" href="./quizzes.html">Сохранённые квизы</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="content">
+      <section class="quiz-generator">
+        <div>
+          <h1 class="content__title">Генератор квизов</h1>
+          <p class="content__subtitle">Вставьте JSON...</p>
+        </div>
+        <form class="form quiz-generator__form">
+          <label class="quiz-generator__label" for="quiz-generator-input">Ваш JSON</label>
+          <textarea class="quiz-generator__textarea" id="quiz-generator-input" name="quiz-generator-input" placeholder="{
+«title»: «Placeholder»,
+«questions»: []
+}"></textarea>
+          <button class="button button__type_primary" type=" submit">Сгенерировать</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p class="footer__copyright">Учебный проект 2025</p>
+    </footer>
+
+    <div class="toast" hidden>
+      <span class="toast__img" src="" alt="">❌</span>
+      <p class="toast__title"></p>
+      <p class="toast__description"></p>
+      <button class="button button__type_default">Попробовать снова</button>
+    </div>
+  </div>
+
   <script type="module" src="./js/pages/main.js"></script>
 </body>
 

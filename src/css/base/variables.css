@@ -1,0 +1,108 @@
+:root {
+  --color-primary: #3b82f6;
+  --color-primary-rgba-05: rgba(59, 130, 246, 0.05);
+  --color-primary-rgba-10: rgba(59, 130, 246, 0.1);
+
+  --color-background: #f9fafb;
+  --color-surface: #fff;
+  --color-border: #e5e7eb;
+  --color-error: #ef4444;
+  --color-success: #10b981;
+
+  --color-error-rgba-05: rgba(239, 68, 68, 0.05);
+
+  --color-text-primary: #111827;
+  --color-text-secondary: #6b7280;
+
+  --box-shadow-s: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  --box-shadow-m: 0px 4px 16px rgba(0, 0, 0, 0.12);
+  --box-shadow-l: 0px 8px 24px rgba(0, 0, 0, 0.14);
+
+  --opacity-80: 0.8;
+  --opacity-85: 0.85;
+
+  --spacing-2: 2px;
+  --spacing-4: 4px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-48: 48px;
+  --spacing-60: 60px;
+  --spacing-64: 64px;
+  --spacing-96: 96px;
+
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+
+  --font-size-h1: 32px;
+  --font-size-h2: 24px;
+  --font-size-h3: 18px;
+  --font-size-body: 16px;
+  --font-size-body-accent: 16px;
+  --font-size-caption: 12px;
+  --font-size-mono: 14px;
+
+  --font-weight-bold: 700;
+  --font-weight-semibold: 600;
+  --font-weight-accent: 500;
+  --font-weight-regular: 400;
+
+  --font-line-height-xs: 1.2;
+  --font-line-height-sm: 1.3;
+  --font-line-height-mg: 1.4;
+  --font-line-height-lg: 1.5;
+
+  --font-family-main: 'Inter', Arial, Helvetica, sans-serif;
+  --font-family-secondary: 'JetBrains Mono', monospace;
+
+  --grid-columns: 12;
+  --grid-gutter: 24px;
+  --grid-margin: 64px;
+
+  --page-width-max: 1140px;
+  --page-width-min: 200px;
+
+  --page-width-desktop: 1440px;
+  --page-width-tablet: 1200px;
+  --page-width-mobile: 414px;
+
+  --padding-header: var(--spacing-16) 0;
+  --padding-page: 0 150px;
+
+  --icon-check-url: url('../../assets/check.svg');
+  --icon-cross-url: url('../../assets/cross.svg');
+
+  --background-icon-check: var(--icon-check-url) no-repeat center;
+  --background-icon-cross: var(--icon-cross-url) no-repeat center;
+}
+
+@media (max-width: 1200px) {
+  :root {
+    --grid-columns: 8;
+    --grid-gutter: 20px;
+    --grid-margin: 32px;
+
+    --padding-header: var(--spacing-12) 0;
+  }
+}
+
+@media (max-width: 798px) {
+  :root {
+    --grid-columns: 4;
+    --grid-gutter: 16px;
+    --grid-margin: 16px;
+
+    --padding-page: 0 43px;
+  }
+}
+
+@media (max-width: 390px) {
+  :root {
+    --padding-page: 0 20px;
+  }
+}
