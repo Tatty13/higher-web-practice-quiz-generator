@@ -5,15 +5,74 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Прохождение теста</title>
+  <link rel="shortcut icon" href="./assets/logo.svg" type="image/x-icon">
   <link rel="stylesheet" href="./css/pages/quiz.css" />
 </head>
 
 <body>
+  <div class="page">
+    <header class="header">
+      <a class="logo" href="./index.html"></a>
+      <nav class="header__nav">
+        <a class="button button__type_default" href="./quizzes.html">Посмотреть сохранённые квизы</a>
+      </nav>
+      <button class="burger-btn">
+        <span class="burger-btn__line"></span>
+      </button>
+      <nav class="header__menu">
+        <ul class="header__menu-list">
+          <li class="header__menu-item">
+            <a class="header__menu-link" href="./quizzes.html">Сохранённые квизы</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-  <!-- В quiz.html -->
+    <main class="content">
+      <section class="quiz">
+        <div>
+          <h1 class="content__title quiz__title"></h1>
+          <p class="content__subtitle quiz__subtitle"></p>
+        </div>
+        <div class="progress">
+          <label class="progress__label" for="progress-bar"></label>
+          <progress class="progress__bar" id="progress-bar" value="1" max="7"></progress>
+        </div>
+        <form name="quiz-form" class="form quiz__form">
+          <div class="quiz__question"></div>
+          <button type="submit" class="button button__type_primary quiz__submit-btn">Ответить</button>
+          <button type="button" class="button button__type_primary quiz__next-btn" hidden>Следующий вопрос</button>
+        </form>
+      </section>
+
+      <section class="modal" hidden>
+        <h2 class="modal__title"></h2>
+        <p class="modal__subtitle"></p>
+        <p class="modal__description"></p>
+        <div class="modal__actions">
+          <a class="button button__type_primary" href="./quizzes.html">К списку квизов</a>
+          <button class="button button__type_default modal__reattempt-btn">Пройти снова</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p class="footer__copyright">Учебный проект 2025</p>
+    </footer>
+
+
+    <div class="toast" hidden>
+      <span class="toast__img" src="" alt="">❌</span>
+      <p class="toast__title"></p>
+      <p class="toast__description"></p>
+      <button class="button button__type_default">Закрыть</button>
+    </div>
+
+  </div>
+
   <template id="single-question-template">
     <div class="question" data-type="single">
-      <h3 class="question__text"></h3>
+      <h2 class="question__text"></h2>
       <p class="question__hint">Выберите один вариант ответа</p>
       <div class="question__options"></div>
     </div>
@@ -21,27 +80,33 @@
 
   <template id="multiple-question-template">
     <div class="question" data-type="multiple">
-      <h3 class="question__text"></h3>
+      <h2 class="question__text"></h2>
       <p class="question__hint">Выберите один или несколько вариантов ответа</p>
       <div class="question__options"></div>
     </div>
   </template>
 
   <template id="option-template">
-    <label class="option">
-      <input type="radio" name="question" value="" />
-      <span class="option__text"></span>
-    </label>
+    <div class="option">
+      <label class="option__label">
+        <input type="radio" name="question" value="" class="option__input" />
+        <span class="option__text"></span>
+      </label>
+      <span class="option__message"></span>
+    </div>
   </template>
 
   <template id="checkbox-option-template">
-    <label class="option">
-      <input type="checkbox" name="question" value="" />
-      <span class="option__text"></span>
-    </label>
+    <div class="option">
+      <label class="option__label">
+        <input type="checkbox" name="question" value="" class="option__input" />
+        <span class="option__text"></span>
+      </label>
+      <span class="option__message"></span>
+    </div>
   </template>
 
-  <script type="module" src="./js/pages/quiz.js"></script>
+  <script type="module" src="./js/pages/quiz2.js"></script>
 </body>
 
 </html>
