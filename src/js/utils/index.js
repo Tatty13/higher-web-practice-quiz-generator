@@ -4,6 +4,7 @@ import * as error from './error';
 import * as quizAnswer from './quizAnswer';
 import * as storage from './storage';
 import * as validation from './validation';
+import * as url from './url';
 
 const utils = {
   declension,
@@ -12,6 +13,7 @@ const utils = {
   quizAnswer,
   storage,
   validation,
+  url,
 };
 
 export default utils;
