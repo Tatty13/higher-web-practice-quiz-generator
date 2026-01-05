@@ -1,0 +1,7 @@
+.no-quizzes {
+  margin: auto;
+}
+
+.no-quizzes__subtitle {
+  margin-bottom: var(--spacing-20);
+}

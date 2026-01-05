@@ -1,0 +1,32 @@
+.quiz-card {
+  padding: var(--spacing-16);
+  grid-column: span 4;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--box-shadow-s);
+}
+
+.quiz-card:hover {
+  background: var(--color-primary-rgba-05);
+}
+
+.quiz-card__title {
+  margin-bottom: var(--spacing-8);
+}
+
+.quiz-card__description {
+  margin-bottom: var(--spacing-16);
+  color: var(--color-text-secondary);
+}
+
+.quiz-card__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.quiz-card__question-count {
+  font-size: var(--font-size-caption);
+  line-height: var(--font-line-height-mg);
+  color: var(--color-text-secondary);
+}

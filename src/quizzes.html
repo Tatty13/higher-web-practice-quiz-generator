@@ -1,18 +1,64 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0" />
-    <title>Ваши квизы</title>
-    <link
-      rel="stylesheet"
-      href="./css/pages/quizzes.css" />
-  </head>
-  <body>
-    <script
-      type="module"
-      src="./js/pages/quizzes.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ваши квизы</title>
+  <link rel="shortcut icon" href="./assets/logo.svg" type="image/x-icon">
+  <link rel="stylesheet" href="./css/pages/quizzes.css" />
+</head>
+
+<body>
+  <div class="page">
+    <header class="header">
+      <a class="logo" href="./index.html"></a>
+      <nav class="header__nav">
+        <a class="button button__type_primary" href="./index.html">Добавить квиз</a>
+      </nav>
+      <button class="burger-btn">
+        <span class="burger-btn__line"></span>
+      </button>
+      <nav class="header__menu">
+        <ul class="header__menu-list">
+          <li class="header__menu-item">
+            <a class="header__menu-link" href="./quizzes.html">Добавить квиз</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="content">
+      <section class="quizzes">
+        <h1 class="quizzes__title">Ваши квизы</h1>
+        <ul class="quizzes__list"></ul>
+      </section>
+
+      <section class="no-quizzes" hidden>
+        <h1 class="content__title">У вас нет сохранённых квизов(</h1>
+        <p class="content__subtitle no-quizzes__subtitle">Но вы можете добавить!</p>
+        <a class="button button__type_primary" href="./index.html">Добавить квиз</a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p class="footer__copyright">Учебный проект 2025</p>
+    </footer>
+  </div>
+
+  <template id="quiz-card-template">
+    <li class="quiz-card">
+      <h3 class="quiz-card__title"></h3>
+      <p class="quiz-card__description"></p>
+
+      <div class="quiz-card__footer">
+        <span class="quiz-card__question-count"></span>
+        <a class="button button__type_text" href="./quiz.html">Пройти</a>
+      </div>
+    </li>
+  </template>
+
+  <script type="module" src="./js/pages/quizzes.js"></script>
+</body>
+
 </html>
