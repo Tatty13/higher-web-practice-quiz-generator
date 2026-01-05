@@ -16,3 +16,9 @@
     max-width: 704px;
   }
 }
+
+@media screen and (max-width: 480px) {
+  .quiz .button {
+    width: 100%;
+  }
+}

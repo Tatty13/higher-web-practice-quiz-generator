@@ -43,3 +43,16 @@ p {
 [hidden] {
   display: none !important;
 }
+
+@media (max-width: 620px) {
+  h1 {
+    font-size: var(--font-size-h2);
+    font-weight: var(--font-weight-semibold);
+    line-height: var(--font-line-height-xs);
+  }
+
+  h2 {
+    font-size: var(--font-size-h3);
+    line-height: var(--font-line-height-sm);
+  }
+}

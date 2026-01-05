@@ -97,6 +97,12 @@
     --grid-gutter: 16px;
     --grid-margin: 16px;
 
+    --padding-page: 0 130px;
+  }
+}
+
+@media (max-width: 620px) {
+  :root {
     --padding-page: 0 43px;
   }
 }

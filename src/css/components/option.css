@@ -57,6 +57,7 @@
 .option__input {
   appearance: none;
   position: relative;
+  min-width: var(--spacing-20);
   width: var(--spacing-20);
   height: var(--spacing-20);
   border: 1px solid var(--color-primary);

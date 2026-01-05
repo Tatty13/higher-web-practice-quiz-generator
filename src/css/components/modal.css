@@ -29,3 +29,17 @@
   display: flex;
   gap: var(--spacing-8);
 }
+
+@media screen and (max-width: 740px) {
+  .modal {
+    width: calc(100% - 110px);
+  }
+
+  .modal__actions {
+    flex-direction: column;
+  }
+
+  .modal__actions .button {
+    width: auto;
+  }
+}
