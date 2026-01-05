@@ -1,6 +1,8 @@
 .quiz-card {
   padding: var(--spacing-16);
   grid-column: span 4;
+  display: flex;
+  flex-direction: column;
   border-radius: var(--radius-md);
   border: 1px solid var(--color-border);
   box-shadow: var(--box-shadow-s);
@@ -23,6 +25,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: auto;
 }
 
 .quiz-card__question-count {
